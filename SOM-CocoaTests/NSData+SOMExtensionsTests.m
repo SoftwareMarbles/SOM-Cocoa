@@ -14,7 +14,7 @@
 //  limitations under the License.
 //
 //
-//  NSArray+SOMExtensionsTests.m
+//  NSData+SOMExtensionsTests.m
 //  SOM-Cocoa
 //
 //  Created by Ivan Erceg on 12/24/13.
@@ -22,13 +22,13 @@
 
 #import <XCTest/XCTest.h>
 
-#import "NSArray+SOMExtensions.h"
+#import "NSData+SOMExtensions.h"
 
-@interface NSArray_SOMExtensionsTests : XCTestCase
+@interface NSData_SOMExtensionsTests : XCTestCase
 
 @end
 
-@implementation NSArray_SOMExtensionsTests
+@implementation NSData_SOMExtensionsTests
 
 - (void)setUp
 {
@@ -42,12 +42,13 @@
     [super tearDown];
 }
 
-- (void)testIsEmpty
+- (void)testExample
 {
-    XCTAssert([NSArray new].isEmpty);
+    XCTAssert([[[NSData new] asHexadecimalString] isEqualToString:@""]);
     
-    NSArray *array = @[@""];
-    XCTAssert(!array.isEmpty);
+    //  0x41 is capital A in UTF8.
+    NSData *data = [@"A" dataUsingEncoding:NSUTF8StringEncoding];
+    XCTAssert([[data asHexadecimalString] isEqualToString:@"41"]);
 }
 
 @end

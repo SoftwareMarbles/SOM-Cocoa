@@ -14,16 +14,18 @@
 //  limitations under the License.
 //
 //
-//  NSArray+SOMExtensions.h
+//  NSData+SOMExtensions.h
 //  SOM-Cocoa
 //
-//  Created by Ivan Erceg on 12/24/2013
+//  Created by Ivan Erceg on 11/29/13.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (SOMExtensions)
+@interface NSData (SOMExtensions)
 
-- (BOOL) isEmpty;
+//  Extends NSData with conversion to hexadecimal string.
+//  As seen here: http://stackoverflow.com/questions/1305225/best-way-to-serialize-a-nsdata-into-an-hexadeximal-string/9084784#9084784
+- (NSString *)asHexadecimalString;
 
 @end

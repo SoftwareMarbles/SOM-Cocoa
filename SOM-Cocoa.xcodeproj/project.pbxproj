@@ -18,6 +18,9 @@
 		811347B4186A28CA001E837E /* NSArray+SOMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347B3186A28CA001E837E /* NSArray+SOMExtensions.m */; };
 		811347B5186A28CA001E837E /* NSArray+SOMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347B3186A28CA001E837E /* NSArray+SOMExtensions.m */; };
 		811347B8186A2958001E837E /* NSArray+SOMExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347B7186A2958001E837E /* NSArray+SOMExtensionsTests.m */; };
+		811347BD186A2DBE001E837E /* NSData+SOMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347BC186A2DBE001E837E /* NSData+SOMExtensions.m */; };
+		811347BE186A2DBE001E837E /* NSData+SOMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347BC186A2DBE001E837E /* NSData+SOMExtensions.m */; };
+		811347C0186A2E99001E837E /* NSData+SOMExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347BF186A2E99001E837E /* NSData+SOMExtensionsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		811347B2186A28CA001E837E /* NSArray+SOMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SOMExtensions.h"; sourceTree = "<group>"; };
 		811347B3186A28CA001E837E /* NSArray+SOMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SOMExtensions.m"; sourceTree = "<group>"; };
 		811347B7186A2958001E837E /* NSArray+SOMExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SOMExtensionsTests.m"; sourceTree = "<group>"; };
+		811347BB186A2DBE001E837E /* NSData+SOMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SOMExtensions.h"; sourceTree = "<group>"; };
+		811347BC186A2DBE001E837E /* NSData+SOMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SOMExtensions.m"; sourceTree = "<group>"; };
+		811347BF186A2E99001E837E /* NSData+SOMExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SOMExtensionsTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,7 @@
 			children = (
 				811347A3186A288B001E837E /* Supporting Files */,
 				811347B7186A2958001E837E /* NSArray+SOMExtensionsTests.m */,
+				811347BF186A2E99001E837E /* NSData+SOMExtensionsTests.m */,
 			);
 			path = "SOM-CocoaTests";
 			sourceTree = "<group>";
@@ -151,6 +158,8 @@
 		811347B6186A28D2001E837E /* NS */ = {
 			isa = PBXGroup;
 			children = (
+				811347BB186A2DBE001E837E /* NSData+SOMExtensions.h */,
+				811347BC186A2DBE001E837E /* NSData+SOMExtensions.m */,
 				811347B2186A28CA001E837E /* NSArray+SOMExtensions.h */,
 				811347B3186A28CA001E837E /* NSArray+SOMExtensions.m */,
 			);
@@ -238,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811347BD186A2DBE001E837E /* NSData+SOMExtensions.m in Sources */,
 				81134794186A288B001E837E /* SOM_Cocoa.m in Sources */,
 				811347B4186A28CA001E837E /* NSArray+SOMExtensions.m in Sources */,
 			);
@@ -247,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811347BE186A2DBE001E837E /* NSData+SOMExtensions.m in Sources */,
 				811347B8186A2958001E837E /* NSArray+SOMExtensionsTests.m in Sources */,
+				811347C0186A2E99001E837E /* NSData+SOMExtensionsTests.m in Sources */,
 				811347B5186A28CA001E837E /* NSArray+SOMExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +437,7 @@
 				811347AE186A288B001E837E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		811347AF186A288B001E837E /* Build configuration list for PBXNativeTarget "SOM-CocoaTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +446,7 @@
 				811347B1186A288B001E837E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
