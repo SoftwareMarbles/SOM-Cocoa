@@ -21,6 +21,9 @@
 		811347BD186A2DBE001E837E /* NSData+SOMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347BC186A2DBE001E837E /* NSData+SOMExtensions.m */; };
 		811347BE186A2DBE001E837E /* NSData+SOMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347BC186A2DBE001E837E /* NSData+SOMExtensions.m */; };
 		811347C0186A2E99001E837E /* NSData+SOMExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347BF186A2E99001E837E /* NSData+SOMExtensionsTests.m */; };
+		811347C3186A3164001E837E /* NSString+SOMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347C2186A3164001E837E /* NSString+SOMExtensions.m */; };
+		811347C4186A3164001E837E /* NSString+SOMExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347C2186A3164001E837E /* NSString+SOMExtensions.m */; };
+		811347C6186A321F001E837E /* NSString+SOMExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347C5186A321F001E837E /* NSString+SOMExtensionsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		811347BB186A2DBE001E837E /* NSData+SOMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SOMExtensions.h"; sourceTree = "<group>"; };
 		811347BC186A2DBE001E837E /* NSData+SOMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SOMExtensions.m"; sourceTree = "<group>"; };
 		811347BF186A2E99001E837E /* NSData+SOMExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SOMExtensionsTests.m"; sourceTree = "<group>"; };
+		811347C1186A3164001E837E /* NSString+SOMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SOMExtensions.h"; sourceTree = "<group>"; };
+		811347C2186A3164001E837E /* NSString+SOMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SOMExtensions.m"; sourceTree = "<group>"; };
+		811347C5186A321F001E837E /* NSString+SOMExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SOMExtensionsTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,7 @@
 				811347A3186A288B001E837E /* Supporting Files */,
 				811347B7186A2958001E837E /* NSArray+SOMExtensionsTests.m */,
 				811347BF186A2E99001E837E /* NSData+SOMExtensionsTests.m */,
+				811347C5186A321F001E837E /* NSString+SOMExtensionsTests.m */,
 			);
 			path = "SOM-CocoaTests";
 			sourceTree = "<group>";
@@ -158,6 +165,8 @@
 		811347B6186A28D2001E837E /* NS */ = {
 			isa = PBXGroup;
 			children = (
+				811347C1186A3164001E837E /* NSString+SOMExtensions.h */,
+				811347C2186A3164001E837E /* NSString+SOMExtensions.m */,
 				811347BB186A2DBE001E837E /* NSData+SOMExtensions.h */,
 				811347BC186A2DBE001E837E /* NSData+SOMExtensions.m */,
 				811347B2186A28CA001E837E /* NSArray+SOMExtensions.h */,
@@ -248,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				811347BD186A2DBE001E837E /* NSData+SOMExtensions.m in Sources */,
+				811347C3186A3164001E837E /* NSString+SOMExtensions.m in Sources */,
 				81134794186A288B001E837E /* SOM_Cocoa.m in Sources */,
 				811347B4186A28CA001E837E /* NSArray+SOMExtensions.m in Sources */,
 			);
@@ -258,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				811347BE186A2DBE001E837E /* NSData+SOMExtensions.m in Sources */,
+				811347C6186A321F001E837E /* NSString+SOMExtensionsTests.m in Sources */,
+				811347C4186A3164001E837E /* NSString+SOMExtensions.m in Sources */,
 				811347B8186A2958001E837E /* NSArray+SOMExtensionsTests.m in Sources */,
 				811347C0186A2E99001E837E /* NSData+SOMExtensionsTests.m in Sources */,
 				811347B5186A28CA001E837E /* NSArray+SOMExtensions.m in Sources */,
