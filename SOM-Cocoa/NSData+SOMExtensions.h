@@ -26,6 +26,6 @@
 
 //  Extends NSData with conversion to hexadecimal string.
 //  As seen here: http://stackoverflow.com/questions/1305225/best-way-to-serialize-a-nsdata-into-an-hexadeximal-string/9084784#9084784
-- (NSString *)asHexadecimalString;
+- (NSString *)som_asHexadecimalString;
 
 @end

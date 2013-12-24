@@ -24,7 +24,7 @@
 
 @implementation NSData (SOMExtensions)
 
-- (NSString *)asHexadecimalString {
+- (NSString *)som_asHexadecimalString {
     /* Returns hexadecimal string of NSData. Empty string if data is empty.   */
     
     const unsigned char *dataBuffer = (const unsigned char *)[self bytes];
