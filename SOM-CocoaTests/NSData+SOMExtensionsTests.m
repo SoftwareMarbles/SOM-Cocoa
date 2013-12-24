@@ -44,11 +44,11 @@
 
 - (void)testExample
 {
-    XCTAssert([[[NSData new] asHexadecimalString] isEqualToString:@""]);
+    XCTAssert([[[NSData new] som_asHexadecimalString] isEqualToString:@""]);
     
     //  0x41 is capital A in UTF8.
     NSData *data = [@"A" dataUsingEncoding:NSUTF8StringEncoding];
-    XCTAssert([[data asHexadecimalString] isEqualToString:@"41"]);
+    XCTAssert([[data som_asHexadecimalString] isEqualToString:@"41"]);
 }
 
 @end
