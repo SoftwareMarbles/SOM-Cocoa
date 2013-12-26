@@ -31,6 +31,9 @@
 		814F384D186C963300984912 /* UIView+SOMCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F384C186C963300984912 /* UIView+SOMCategories.m */; };
 		814F384E186C963300984912 /* UIView+SOMCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F384C186C963300984912 /* UIView+SOMCategories.m */; };
 		814F3850186C991A00984912 /* UIView+SOMCategoriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F384F186C991A00984912 /* UIView+SOMCategoriesTests.m */; };
+		814F3854186C9EC000984912 /* AVCaptureDevice+SOMCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F3853186C9EC000984912 /* AVCaptureDevice+SOMCategories.m */; };
+		814F3855186C9EC000984912 /* AVCaptureDevice+SOMCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F3853186C9EC000984912 /* AVCaptureDevice+SOMCategories.m */; };
+		814F3857186C9F7300984912 /* AVCaptureDevice+SOMCategoriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F3856186C9F7300984912 /* AVCaptureDevice+SOMCategoriesTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		814F384B186C963300984912 /* UIView+SOMCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SOMCategories.h"; sourceTree = "<group>"; };
 		814F384C186C963300984912 /* UIView+SOMCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SOMCategories.m"; sourceTree = "<group>"; };
 		814F384F186C991A00984912 /* UIView+SOMCategoriesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SOMCategoriesTests.m"; sourceTree = "<group>"; };
+		814F3852186C9EC000984912 /* AVCaptureDevice+SOMCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVCaptureDevice+SOMCategories.h"; sourceTree = "<group>"; };
+		814F3853186C9EC000984912 /* AVCaptureDevice+SOMCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureDevice+SOMCategories.m"; sourceTree = "<group>"; };
+		814F3856186C9F7300984912 /* AVCaptureDevice+SOMCategoriesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureDevice+SOMCategoriesTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,7 @@
 		8113478E186A288B001E837E /* SOM-Cocoa */ = {
 			isa = PBXGroup;
 			children = (
+				814F3851186C9EA100984912 /* AVFoundation */,
 				814F3840186C7B8300984912 /* SOMCategories.h */,
 				814F3844186C8CB300984912 /* Objective-C */,
 				814F383B186C79D200984912 /* UIKit */,
@@ -167,6 +174,7 @@
 				814F3841186C7DF300984912 /* UIColor+SOMCategoriesTests.m */,
 				814F3849186C92B500984912 /* SOMOopUtilityTests.m */,
 				814F384F186C991A00984912 /* UIView+SOMCategoriesTests.m */,
+				814F3856186C9F7300984912 /* AVCaptureDevice+SOMCategoriesTests.m */,
 			);
 			path = "SOM-CocoaTests";
 			sourceTree = "<group>";
@@ -211,6 +219,15 @@
 				814F3846186C8CC300984912 /* SOMOopUtility.m */,
 			);
 			name = "Objective-C";
+			sourceTree = "<group>";
+		};
+		814F3851186C9EA100984912 /* AVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				814F3852186C9EC000984912 /* AVCaptureDevice+SOMCategories.h */,
+				814F3853186C9EC000984912 /* AVCaptureDevice+SOMCategories.m */,
+			);
+			name = AVFoundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +315,7 @@
 				814F3847186C8CC300984912 /* SOMOopUtility.m in Sources */,
 				811347BD186A2DBE001E837E /* NSData+SOMCategories.m in Sources */,
 				811347C3186A3164001E837E /* NSString+SOMCategories.m in Sources */,
+				814F3854186C9EC000984912 /* AVCaptureDevice+SOMCategories.m in Sources */,
 				811347B4186A28CA001E837E /* NSArray+SOMCategories.m in Sources */,
 				814F383E186C79E000984912 /* UIColor+SOMCategories.m in Sources */,
 			);
@@ -310,6 +328,7 @@
 				811347BE186A2DBE001E837E /* NSData+SOMCategories.m in Sources */,
 				814F384A186C92B500984912 /* SOMOopUtilityTests.m in Sources */,
 				814F3850186C991A00984912 /* UIView+SOMCategoriesTests.m in Sources */,
+				814F3855186C9EC000984912 /* AVCaptureDevice+SOMCategories.m in Sources */,
 				811347C6186A321F001E837E /* NSString+SOMCategoriesTests.m in Sources */,
 				811347C4186A3164001E837E /* NSString+SOMCategories.m in Sources */,
 				811347B8186A2958001E837E /* NSArray+SOMCategoriesTests.m in Sources */,
@@ -317,6 +336,7 @@
 				814F3848186C8CC300984912 /* SOMOopUtility.m in Sources */,
 				814F383F186C79E000984912 /* UIColor+SOMCategories.m in Sources */,
 				811347C0186A2E99001E837E /* NSData+SOMCategoriesTests.m in Sources */,
+				814F3857186C9F7300984912 /* AVCaptureDevice+SOMCategoriesTests.m in Sources */,
 				811347B5186A28CA001E837E /* NSArray+SOMCategories.m in Sources */,
 				814F3842186C7DF300984912 /* UIColor+SOMCategoriesTests.m in Sources */,
 			);

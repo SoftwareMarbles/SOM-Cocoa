@@ -14,6 +14,9 @@
 //  limitations under the License.
 //
 //
+//  UIView+SOMCategoriesTests.m
+//  SOM-Cocoa
+//
 //  Created by Ivan Erceg on 12/26/13.
 //
 
