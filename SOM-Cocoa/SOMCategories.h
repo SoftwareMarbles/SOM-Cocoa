@@ -31,3 +31,6 @@
 //  UIKit categories
 #import "UIColor+SOMCategories.h"
 #import "UIView+SOMCategories.h"
+
+//  AVFoundation categories
+#import "AVCaptureDevice+SOMCategories.h"

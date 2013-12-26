@@ -20,7 +20,7 @@
 //  Created by Ivan Erceg on 11/22/13.
 //
 
-@import UIKit;
+#include <UIKit/UIKit.h>
 
 @interface UIColor (SOMCategories)
 

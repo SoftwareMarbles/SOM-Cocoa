@@ -20,7 +20,7 @@
 //  Created by Ivan Erceg on 12/2/13.
 //
 
-@import Foundation;
+#include <Foundation/Foundation.h>
 
 @interface NSString (SOMCategories)
 

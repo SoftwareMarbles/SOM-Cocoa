@@ -20,7 +20,7 @@
 //  Created by Ivan Erceg on 11/21/13.
 //
 
-@import Foundation;
+#include <Foundation/Foundation.h>
 
 @interface NSObject (SOMCategories)
 
