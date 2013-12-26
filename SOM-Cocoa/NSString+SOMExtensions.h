@@ -20,7 +20,7 @@
 //  Created by Ivan Erceg on 12/2/13.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface NSString (SOMExtensions)
 

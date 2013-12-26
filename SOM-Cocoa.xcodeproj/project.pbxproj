@@ -55,13 +55,13 @@
 		8113479D186A288B001E837E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		811347A4186A288B001E837E /* SOM-CocoaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SOM-CocoaTests-Info.plist"; sourceTree = "<group>"; };
 		811347A6186A288B001E837E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		811347B2186A28CA001E837E /* NSArray+SOMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SOMExtensions.h"; sourceTree = "<group>"; };
+		811347B2186A28CA001E837E /* NSArray+SOMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSArray+SOMExtensions.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		811347B3186A28CA001E837E /* NSArray+SOMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SOMExtensions.m"; sourceTree = "<group>"; };
 		811347B7186A2958001E837E /* NSArray+SOMExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SOMExtensionsTests.m"; sourceTree = "<group>"; };
-		811347BB186A2DBE001E837E /* NSData+SOMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SOMExtensions.h"; sourceTree = "<group>"; };
+		811347BB186A2DBE001E837E /* NSData+SOMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSData+SOMExtensions.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		811347BC186A2DBE001E837E /* NSData+SOMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SOMExtensions.m"; sourceTree = "<group>"; };
 		811347BF186A2E99001E837E /* NSData+SOMExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SOMExtensionsTests.m"; sourceTree = "<group>"; };
-		811347C1186A3164001E837E /* NSString+SOMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SOMExtensions.h"; sourceTree = "<group>"; };
+		811347C1186A3164001E837E /* NSString+SOMExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSString+SOMExtensions.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		811347C2186A3164001E837E /* NSString+SOMExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SOMExtensions.m"; sourceTree = "<group>"; };
 		811347C5186A321F001E837E /* NSString+SOMExtensionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SOMExtensionsTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */

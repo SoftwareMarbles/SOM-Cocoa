@@ -20,7 +20,7 @@
 //  Created by Ivan Erceg on 11/29/13.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface NSData (SOMExtensions)
 
