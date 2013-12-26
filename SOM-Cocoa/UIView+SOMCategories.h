@@ -14,38 +14,21 @@
 //  limitations under the License.
 //
 //
-//  SOMOopUtilityTests.m
+//  UIView+SOMCategories.h
 //  SOM-Cocoa
 //
 //  Created by Ivan Erceg on 12/26/13.
 //
 
-#import <XCTest/XCTest.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-#import "SOMOopUtility.h"
+@interface UIView (SOMCategories)
 
-@interface SOMOopUtilityTests : XCTestCase
+//  Removes all the subviews of the view and returns the array with all of them.
+- (NSArray*)som_removeSubviews;
 
-@end
-
-@implementation SOMOopUtilityTests
-
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here; it will be run once, before the first test case.
-}
-
-- (void)tearDown
-{
-    // Put teardown code here; it will be run once, after the last test case.
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    XCTAssertThrowsSpecificNamed([SOMOopUtility abstractMethodInvoked:_cmd], NSException, NSInternalInconsistencyException);
-    XCTAssertThrowsSpecificNamed([SOMOopUtility unimplementedMethodInvoked:_cmd], NSException, NSInternalInconsistencyException);
-}
+//  Hides all the peer views of the given view and returns an array of the ones that were previously not hidden.
+- (NSArray*)som_hidePeerViews;
 
 @end

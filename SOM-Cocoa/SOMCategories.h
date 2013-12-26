@@ -29,3 +29,4 @@
 
 //  UIKit categories
 #import "UIColor+SOMCategories.h"
+#import "UIView+SOMCategories.h"
