@@ -23,6 +23,7 @@
 //  Helper header to include all SOM categories.
 
 //  Foundation categories
+#import "NSObject+SOMCategories.h"
 #import "NSString+SOMCategories.h"
 #import "NSData+SOMCategories.h"
 #import "NSArray+SOMCategories.h"

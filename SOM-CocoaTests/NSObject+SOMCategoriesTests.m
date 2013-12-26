@@ -14,7 +14,7 @@
 //  limitations under the License.
 //
 //
-//  SOMOopUtilityTests.m
+//  NSObject+SOMCategoriesTests.m
 //  SOM-Cocoa
 //
 //  Created by Ivan Erceg on 12/26/13.
@@ -22,13 +22,13 @@
 
 #import <XCTest/XCTest.h>
 
-#import "SOMOopUtility.h"
+#import "NSObject+SOMCategories.h"
 
-@interface SOMOopUtilityTests : XCTestCase
+@interface NSObject_SOMCategoriesTests : XCTestCase
 
 @end
 
-@implementation SOMOopUtilityTests
+@implementation NSObject_SOMCategoriesTests
 
 - (void)setUp
 {
@@ -44,8 +44,8 @@
 
 - (void)testExample
 {
-    XCTAssertThrowsSpecificNamed([SOMOopUtility abstractMethodInvoked:_cmd], NSException, NSInternalInconsistencyException);
-    XCTAssertThrowsSpecificNamed([SOMOopUtility unimplementedMethodInvoked:_cmd], NSException, NSInternalInconsistencyException);
+    XCTAssertThrowsSpecificNamed([self abstractMethodInvoked:_cmd], NSException, NSInternalInconsistencyException);
+    XCTAssertThrowsSpecificNamed([self unimplementedMethodInvoked:_cmd], NSException, NSInternalInconsistencyException);
 }
 
 @end

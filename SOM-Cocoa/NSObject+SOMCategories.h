@@ -14,7 +14,7 @@
 //  limitations under the License.
 //
 //
-//  SOMOopUtility.h
+//  NSObject+SOMCategories.h
 //  SOM-Cocoa
 //
 //  Created by Ivan Erceg on 11/21/13.
@@ -22,17 +22,16 @@
 
 @import Foundation;
 
-//  Offers support services for Object Oriented Programming (OOP) that aren't built into Objective-C
-@interface SOMOopUtility : NSObject
+@interface NSObject (SOMCategories)
 
 //  Throws NSInternalInconsistencyException for "abstract" methods. It should be invoked from methods of
 //  base classes that *have* to be overriden in the inheriting classes.
-//  Usage: [SOMOopUtility abstractMethodInvoked:_cmd];
-+ (void)abstractMethodInvoked:(SEL)method;
+//  Usage: [self abstractMethodInvoked:_cmd];
+- (void)abstractMethodInvoked:(SEL)method;
 
 //  Throws NSInternalInconsistencyException for unimplemented methods. It should be invoked from methods
 //  that have a body but haven't yet been implemented.
-//  Usage: [SOMOopUtility unimplementedMethodInvoked:_cmd];
-+ (void)unimplementedMethodInvoked:(SEL)method;
+//  Usage: [self unimplementedMethodInvoked:_cmd];
+- (void)unimplementedMethodInvoked:(SEL)method;
 
 @end

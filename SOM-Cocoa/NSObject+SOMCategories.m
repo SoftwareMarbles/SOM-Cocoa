@@ -14,23 +14,23 @@
 //  limitations under the License.
 //
 //
-//  SOMOopUtility.m
+//  NSObject+SOMCategories.m
 //  SOM-Cocoa
 //
 //  Created by Ivan Erceg on 11/21/13.
 //
 
-#import "SOMOopUtility.h"
+#import "NSObject+SOMCategories.m"
 
-@implementation SOMOopUtility
+@implementation NSObject (SOMCategories)
 
-+ (void)abstractMethodInvoked:(SEL)method {
+- (void)abstractMethodInvoked:(SEL)method {
     @throw [NSException exceptionWithName:NSInternalInconsistencyException
                                    reason:[NSString stringWithFormat:@"The method %@ must be overriden in a subclass", NSStringFromSelector(method)]
                                  userInfo:nil];
 }
 
-+ (void)unimplementedMethodInvoked:(SEL)method {
+- (void)unimplementedMethodInvoked:(SEL)method {
     @throw [NSException exceptionWithName:NSInternalInconsistencyException
                                    reason:[NSString stringWithFormat:@"The method %@ is not implemented", NSStringFromSelector(method)]
                                  userInfo:nil];
