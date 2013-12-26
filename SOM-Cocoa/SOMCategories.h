@@ -14,16 +14,18 @@
 //  limitations under the License.
 //
 //
-//  NSString+SOMExtensions.h
-//  Common
+//  SOMCategories.h
+//  SOM-Cocoa
 //
-//  Created by Ivan Erceg on 12/2/13.
+//  Created by Ivan Erceg on 12/26/13.
 //
 
-@import Foundation;
+//  Helper header to include all SOM categories.
 
-@interface NSString (SOMExtensions)
+//  Foundation categories
+#import "NSString+SOMCategories.h"
+#import "NSData+SOMCategories.h"
+#import "NSArray+SOMCategories.h"
 
-- (BOOL) isEmpty;
-
-@end
+//  UIKit categories
+#import "UIColor+SOMCategories.h"

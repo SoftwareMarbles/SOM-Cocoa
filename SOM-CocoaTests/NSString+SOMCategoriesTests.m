@@ -1,5 +1,5 @@
 //
-//  NSString+SOMExtensionsTests.m
+//  NSString+SOMCategoriesTests.m
 //  SOM-Cocoa
 //
 //  Created by Ivan Erceg on 12/24/13.
@@ -8,13 +8,13 @@
 
 #import <XCTest/XCTest.h>
 
-#import "NSString+SOMExtensions.h"
+#import "NSString+SOMCategories.h"
 
-@interface NSString_SOMExtensionsTests : XCTestCase
+@interface NSString_SOMCategoriesTests : XCTestCase
 
 @end
 
-@implementation NSString_SOMExtensionsTests
+@implementation NSString_SOMCategoriesTests
 
 - (void)setUp
 {

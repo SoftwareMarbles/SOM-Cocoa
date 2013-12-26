@@ -14,7 +14,7 @@
 //  limitations under the License.
 //
 //
-//  NSArray+SOMExtensionsTests.m
+//  NSArray+SOMCategoriesTests.m
 //  SOM-Cocoa
 //
 //  Created by Ivan Erceg on 12/24/13.
@@ -22,13 +22,13 @@
 
 #import <XCTest/XCTest.h>
 
-#import "NSArray+SOMExtensions.h"
+#import "NSArray+SOMCategories.h"
 
-@interface NSArray_SOMExtensionsTests : XCTestCase
+@interface NSArray_SOMCategoriesTests : XCTestCase
 
 @end
 
-@implementation NSArray_SOMExtensionsTests
+@implementation NSArray_SOMCategoriesTests
 
 - (void)setUp
 {

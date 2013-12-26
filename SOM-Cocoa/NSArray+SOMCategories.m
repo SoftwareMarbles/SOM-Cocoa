@@ -14,18 +14,18 @@
 //  limitations under the License.
 //
 //
-//  NSString+SOMExtensions.m
-//  Common
+//  NSArray+SOMCategories.m
+//  SOM-Cocoa
 //
-//  Created by Ivan Erceg on 12/2/13.
+//  Created by Ivan Erceg on 12/24/2013
 //
 
-#import "NSString+SOMExtensions.h"
+#import "NSArray+SOMCategories.h"
 
-@implementation NSString (SOMExtensions)
+@implementation NSArray (SOMCategories)
 
 - (BOOL) isEmpty {
-    return [self isEqualToString:@""];
+    return [self count] == 0;
 }
 
 @end

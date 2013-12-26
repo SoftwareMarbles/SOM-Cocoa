@@ -14,15 +14,15 @@
 //  limitations under the License.
 //
 //
-//  NSData+SOMExtensions.m
+//  NSData+SOMCategories.m
 //  SOM-Cocoa
 //
 //  Created by Ivan Erceg on 11/29/13.
 //
 
-#import "NSData+SOMExtensions.h"
+#import "NSData+SOMCategories.h"
 
-@implementation NSData (SOMExtensions)
+@implementation NSData (SOMCategories)
 
 - (NSString *)som_asHexadecimalString {
     /* Returns hexadecimal string of NSData. Empty string if data is empty.   */

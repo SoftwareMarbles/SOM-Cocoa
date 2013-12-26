@@ -14,7 +14,7 @@
 //  limitations under the License.
 //
 //
-//  NSData+SOMExtensionsTests.m
+//  NSData+SOMCategoriesTests.m
 //  SOM-Cocoa
 //
 //  Created by Ivan Erceg on 12/24/13.
@@ -22,13 +22,13 @@
 
 #import <XCTest/XCTest.h>
 
-#import "NSData+SOMExtensions.h"
+#import "NSData+SOMCategories.h"
 
-@interface NSData_SOMExtensionsTests : XCTestCase
+@interface NSData_SOMCategoriesTests : XCTestCase
 
 @end
 
-@implementation NSData_SOMExtensionsTests
+@implementation NSData_SOMCategoriesTests
 
 - (void)setUp
 {

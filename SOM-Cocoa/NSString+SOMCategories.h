@@ -14,15 +14,15 @@
 //  limitations under the License.
 //
 //
-//  NSArray+SOMExtensions.h
+//  NSString+SOMCategories.h
 //  SOM-Cocoa
 //
-//  Created by Ivan Erceg on 12/24/2013
+//  Created by Ivan Erceg on 12/2/13.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface NSArray (SOMExtensions)
+@interface NSString (SOMCategories)
 
 - (BOOL) isEmpty;
 

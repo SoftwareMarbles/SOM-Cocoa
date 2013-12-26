@@ -14,18 +14,25 @@
 //  limitations under the License.
 //
 //
-//  NSData+SOMExtensions.h
+//  UIColor+SOMCategories.m
 //  SOM-Cocoa
 //
-//  Created by Ivan Erceg on 11/29/13.
+//  Created by Ivan Erceg on 11/22/13.
 //
 
-@import Foundation;
+#import "UIColor+SOMCategories.h"
 
-@interface NSData (SOMExtensions)
-
-//  Extends NSData with conversion to hexadecimal string.
-//  As seen here: http://stackoverflow.com/questions/1305225/best-way-to-serialize-a-nsdata-into-an-hexadeximal-string/9084784#9084784
-- (NSString *)som_asHexadecimalString;
+@implementation UIColor (SOMCategories)
+    
++ (UIColor *)som_colorWithRGBA:(NSUInteger)color {
+    return [UIColor colorWithRed:((color >> 24) & 0xFF) / 255.0f
+                           green:((color >> 16) & 0xFF) / 255.0f
+                            blue:((color >> 8) & 0xFF) / 255.0f
+                           alpha:((color) & 0xFF) / 255.0f];
+}
+    
++ (UIColor *)som_transparentBlack {
+    return [UIColor som_colorWithRGBA:0x00000000];
+}
 
 @end
