@@ -1,6 +1,6 @@
 SOM-Cocoa
 =========
 
-Utilities for Cocoa, part of [SOM](https://github.com/SoftwareMarbles/SOM) utilities.
+Utilities for Cocoa, part of [SOM](https://github.com/SoftwareMarbles/SOM) utilities. It's actually a misnomer as it includes utilities for the entire Apple platform.
 
-First of all check-out [QSKit](https://github.com/quartermaster/QSKit) as it has a whole lot more in there.
+Also check-out [QSKit](https://github.com/quartermaster/QSKit) as it has a lot of useful utilities right there.

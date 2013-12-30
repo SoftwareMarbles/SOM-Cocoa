@@ -23,14 +23,14 @@
 //  Helper header to include all SOM categories.
 
 //  Foundation categories
-#import "NSObject+SOMCategories.h"
-#import "NSString+SOMCategories.h"
-#import "NSData+SOMCategories.h"
-#import "NSArray+SOMCategories.h"
+#import "Foundation/NSObject+SOMCategories.h"
+#import "Foundation/NSString+SOMCategories.h"
+#import "Foundation/NSData+SOMCategories.h"
+#import "Foundation/NSArray+SOMCategories.h"
 
 //  UIKit categories
-#import "UIColor+SOMCategories.h"
-#import "UIView+SOMCategories.h"
+#import "UIKit/UIColor+SOMCategories.h"
+#import "UIKit/UIView+SOMCategories.h"
 
 //  AVFoundation categories
-#import "AVCaptureDevice+SOMCategories.h"
+#import "AVFoundation/AVCaptureDevice+SOMCategories.h"
