@@ -22,6 +22,9 @@
 		811347C3186A3164001E837E /* NSString+SOMCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347C2186A3164001E837E /* NSString+SOMCategories.m */; };
 		811347C4186A3164001E837E /* NSString+SOMCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347C2186A3164001E837E /* NSString+SOMCategories.m */; };
 		811347C6186A321F001E837E /* NSString+SOMCategoriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811347C5186A321F001E837E /* NSString+SOMCategoriesTests.m */; };
+		813E533E188D55B100579861 /* NSDate+SOMCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 813E533D188D55B100579861 /* NSDate+SOMCategories.m */; };
+		813E5340188D5E4300579861 /* NSDate+SOMCategoriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 813E533F188D5E4300579861 /* NSDate+SOMCategoriesTests.m */; };
+		813E5341188D60A400579861 /* NSDate+SOMCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 813E533D188D55B100579861 /* NSDate+SOMCategories.m */; };
 		814F383E186C79E000984912 /* UIColor+SOMCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F383D186C79E000984912 /* UIColor+SOMCategories.m */; };
 		814F383F186C79E000984912 /* UIColor+SOMCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F383D186C79E000984912 /* UIColor+SOMCategories.m */; };
 		814F3842186C7DF300984912 /* UIColor+SOMCategoriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F3841186C7DF300984912 /* UIColor+SOMCategoriesTests.m */; };
@@ -77,6 +80,9 @@
 		811347C1186A3164001E837E /* NSString+SOMCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSString+SOMCategories.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		811347C2186A3164001E837E /* NSString+SOMCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SOMCategories.m"; sourceTree = "<group>"; };
 		811347C5186A321F001E837E /* NSString+SOMCategoriesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SOMCategoriesTests.m"; sourceTree = "<group>"; };
+		813E533C188D55B100579861 /* NSDate+SOMCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SOMCategories.h"; sourceTree = "<group>"; };
+		813E533D188D55B100579861 /* NSDate+SOMCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SOMCategories.m"; sourceTree = "<group>"; };
+		813E533F188D5E4300579861 /* NSDate+SOMCategoriesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SOMCategoriesTests.m"; sourceTree = "<group>"; };
 		814F383C186C79E000984912 /* UIColor+SOMCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SOMCategories.h"; sourceTree = "<group>"; };
 		814F383D186C79E000984912 /* UIColor+SOMCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SOMCategories.m"; sourceTree = "<group>"; };
 		814F3840186C7B8300984912 /* SOMCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOMCategories.h; sourceTree = "<group>"; };
@@ -181,6 +187,7 @@
 				814F3849186C92B500984912 /* NSObject+SOMCategoriesTests.m */,
 				814F384F186C991A00984912 /* UIView+SOMCategoriesTests.m */,
 				814F3856186C9F7300984912 /* AVCaptureDevice+SOMCategoriesTests.m */,
+				813E533F188D5E4300579861 /* NSDate+SOMCategoriesTests.m */,
 			);
 			path = "SOM-CocoaTests";
 			sourceTree = "<group>";
@@ -205,6 +212,8 @@
 				814F3846186C8CC300984912 /* NSObject+SOMCategories.m */,
 				811347C1186A3164001E837E /* NSString+SOMCategories.h */,
 				811347C2186A3164001E837E /* NSString+SOMCategories.m */,
+				813E533C188D55B100579861 /* NSDate+SOMCategories.h */,
+				813E533D188D55B100579861 /* NSDate+SOMCategories.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -330,6 +339,7 @@
 				814F3847186C8CC300984912 /* NSObject+SOMCategories.m in Sources */,
 				811347BD186A2DBE001E837E /* NSData+SOMCategories.m in Sources */,
 				811347C3186A3164001E837E /* NSString+SOMCategories.m in Sources */,
+				813E533E188D55B100579861 /* NSDate+SOMCategories.m in Sources */,
 				814F3854186C9EC000984912 /* AVCaptureDevice+SOMCategories.m in Sources */,
 				819FE2D11870D161006F74AB /* CVPixelBufferSomUtilities.m in Sources */,
 				811347B4186A28CA001E837E /* NSArray+SOMCategories.m in Sources */,
@@ -341,6 +351,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813E5341188D60A400579861 /* NSDate+SOMCategories.m in Sources */,
+				813E5340188D5E4300579861 /* NSDate+SOMCategoriesTests.m in Sources */,
 				811347BE186A2DBE001E837E /* NSData+SOMCategories.m in Sources */,
 				814F384A186C92B500984912 /* NSObject+SOMCategoriesTests.m in Sources */,
 				814F3850186C991A00984912 /* UIView+SOMCategoriesTests.m in Sources */,
