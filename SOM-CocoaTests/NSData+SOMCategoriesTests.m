@@ -46,9 +46,11 @@
 {
     XCTAssert([[[NSData new] som_asHexadecimalString] isEqualToString:@""]);
     
-    //  0x41 is capital A in UTF8.
-    NSData *data = [@"A" dataUsingEncoding:NSUTF8StringEncoding];
-    XCTAssert([[data som_asHexadecimalString] isEqualToString:@"41"]);
+    //  4142434445464748494a4b4c4d4e4f505152535455565758595a is ABCDEFGHIJKLMNOPQRSTUVWXYZ in UTF8.
+    NSData *data = [@"ABCDEFGHIJKLMNOPQRSTUVWXYZ" dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *hex = [data som_asHexadecimalString];
+    XCTAssert([hex isEqualToString:@"4142434445464748494a4b4c4d4e4f505152535455565758595a"]);
+    XCTAssertEqual(hex.length, (NSUInteger)52);
 }
 
 @end
