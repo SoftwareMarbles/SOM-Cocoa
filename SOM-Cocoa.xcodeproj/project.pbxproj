@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81017F1E1978399A00BEDFD4 /* SOMObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 81017F1D1978399A00BEDFD4 /* SOMObjCRuntime.m */; };
+		81017F1F1978399A00BEDFD4 /* SOMObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 81017F1D1978399A00BEDFD4 /* SOMObjCRuntime.m */; };
+		81017F2319783D6B00BEDFD4 /* SOMObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 81017F2219783D6B00BEDFD4 /* SOMObjCRuntime.m */; };
 		8113478D186A288B001E837E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8113478C186A288B001E837E /* Foundation.framework */; };
 		8113479B186A288B001E837E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8113479A186A288B001E837E /* XCTest.framework */; };
 		8113479C186A288B001E837E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8113478C186A288B001E837E /* Foundation.framework */; };
@@ -63,6 +66,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		81017F1C1978399A00BEDFD4 /* SOMObjCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOMObjCRuntime.h; sourceTree = "<group>"; };
+		81017F1D1978399A00BEDFD4 /* SOMObjCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOMObjCRuntime.m; sourceTree = "<group>"; };
+		81017F2219783D6B00BEDFD4 /* SOMObjCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOMObjCRuntime.m; sourceTree = "<group>"; };
 		81134789186A288B001E837E /* libSOM-Cocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSOM-Cocoa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8113478C186A288B001E837E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		81134790186A288B001E837E /* SOM-Cocoa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SOM-Cocoa-Prefix.pch"; sourceTree = "<group>"; };
@@ -164,6 +170,8 @@
 				814F383B186C79D200984912 /* UIKit */,
 				811347B6186A28D2001E837E /* Foundation */,
 				8113478F186A288B001E837E /* Supporting Files */,
+				81017F1C1978399A00BEDFD4 /* SOMObjCRuntime.h */,
+				81017F1D1978399A00BEDFD4 /* SOMObjCRuntime.m */,
 			);
 			path = "SOM-Cocoa";
 			sourceTree = "<group>";
@@ -188,6 +196,7 @@
 				814F384F186C991A00984912 /* UIView+SOMCategoriesTests.m */,
 				814F3856186C9F7300984912 /* AVCaptureDevice+SOMCategoriesTests.m */,
 				813E533F188D5E4300579861 /* NSDate+SOMCategoriesTests.m */,
+				81017F2219783D6B00BEDFD4 /* SOMObjCRuntime.m */,
 			);
 			path = "SOM-CocoaTests";
 			sourceTree = "<group>";
@@ -337,6 +346,7 @@
 			files = (
 				814F384D186C963300984912 /* UIView+SOMCategories.m in Sources */,
 				814F3847186C8CC300984912 /* NSObject+SOMCategories.m in Sources */,
+				81017F1E1978399A00BEDFD4 /* SOMObjCRuntime.m in Sources */,
 				811347BD186A2DBE001E837E /* NSData+SOMCategories.m in Sources */,
 				811347C3186A3164001E837E /* NSString+SOMCategories.m in Sources */,
 				813E533E188D55B100579861 /* NSDate+SOMCategories.m in Sources */,
@@ -364,6 +374,8 @@
 				814F3848186C8CC300984912 /* NSObject+SOMCategories.m in Sources */,
 				814F383F186C79E000984912 /* UIColor+SOMCategories.m in Sources */,
 				811347C0186A2E99001E837E /* NSData+SOMCategoriesTests.m in Sources */,
+				81017F1F1978399A00BEDFD4 /* SOMObjCRuntime.m in Sources */,
+				81017F2319783D6B00BEDFD4 /* SOMObjCRuntime.m in Sources */,
 				814F3857186C9F7300984912 /* AVCaptureDevice+SOMCategoriesTests.m in Sources */,
 				811347B5186A28CA001E837E /* NSArray+SOMCategories.m in Sources */,
 				814F3842186C7DF300984912 /* UIColor+SOMCategoriesTests.m in Sources */,
