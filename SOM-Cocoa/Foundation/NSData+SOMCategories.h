@@ -25,7 +25,7 @@
 @interface NSData (SOMCategories)
 
 //  Extends NSData with conversion to hexadecimal string.
-//  As seen here: http://stackoverflow.com/questions/1305225/best-way-to-serialize-a-nsdata-into-an-hexadeximal-string/9084784#9084784
+//  Returns hexadecimal string of NSData. Empty string if data is empty.
 - (NSString *)som_asHexadecimalString;
 
 @end

@@ -22,25 +22,43 @@
 
 #import "NSData+SOMCategories.h"
 
+static unichar numberToHexChar(unsigned char number) {
+    return number < 10 ? '0' + number : 'a' + (number - 10);
+}
+
 @implementation NSData (SOMCategories)
 
 - (NSString *)som_asHexadecimalString {
-    /* Returns hexadecimal string of NSData. Empty string if data is empty.   */
-    
     const unsigned char *dataBuffer = (const unsigned char *)[self bytes];
-    
     if (!dataBuffer) {
         return [NSString string];
     }
     
-    NSUInteger          dataLength  = [self length];
-    NSMutableString     *hexString  = [NSMutableString stringWithCapacity:(dataLength * 2)];
+    const NSUInteger dataLength  = [self length];
+    const NSUInteger HEX_CHARS_PER_BYTE = 2;
+    const NSUInteger stringLength = HEX_CHARS_PER_BYTE * dataLength;
+    unichar *hexCharBuffer = (unichar*)malloc(stringLength * sizeof(unichar));
     
-    for (int i = 0; i < dataLength; ++i) {
-        [hexString appendString:[NSString stringWithFormat:@"%02lx", (unsigned long)dataBuffer[i]]];
+    @try {
+        for(NSUInteger i = 0; i < dataLength; ++i) {
+            size_t stringIndex = HEX_CHARS_PER_BYTE * i;
+            hexCharBuffer[stringIndex] = numberToHexChar(dataBuffer[i] / 16);
+            hexCharBuffer[stringIndex + 1] = numberToHexChar(dataBuffer[i] % 16);
+        }
+        
+        //  Create the string from the char buffer. The string object will become the owner of the buffer.
+        NSString *hexString = [[NSString alloc] initWithCharactersNoCopy:hexCharBuffer
+                                                                  length:stringLength
+                                                            freeWhenDone:YES];
+        //  The string will release the buffer - we must not release it in @finally.
+        hexCharBuffer = NULL;
+        
+        return hexString;
     }
-    
-    return [NSString stringWithString:hexString];
+    @finally {
+        //  Free the char buffer in case of an exception.
+        free(hexCharBuffer);
+    }
 }
 
 @end
